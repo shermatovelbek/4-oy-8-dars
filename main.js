@@ -5,6 +5,37 @@
 //     console.log(surname);
 // })()
 
+// let arr = [1 , 2 , 3, -10]
+// function sumArr(arr){
+//   let sum = 0;
+//   arr.forEach(element => {
+//     if(element > 0){
+//       sum += element
+//     }
+//   });
+//   return sum;
+// };
+// console.log(sumArr(arr));
+
+
+// let arr = [1 , 3 , 4 , -10 ];
+
+// let arr1 = arr.filter((value , index, arr) =>{
+//   return value % 3 == 0 || value % 5 == 0;
+// }
+// );
+// console.log(arr1)
+
+// let arr = [1 , 2 , 3 , 4];
+// let arr1 = arr.map((value , index , arr) => {
+//   if(value % 2 == 1){
+//     return value ** 3;
+//   } else{
+//     return value ** 2;
+//   }
+// })
+// console.log(arr1)
+
 //massiv yangi usuli massivni !!!
 
 // let arr = [1 , 2, 3 , "salom" , "hayr" , true];
@@ -76,7 +107,19 @@
 // user.phone = "+998946749319"
 
 // console.log(user)
+
+
+
+
+
+
+
 //                    Uyga vazifalar boshlandi !!!
+
+
+
+
+
 // 1-masala
 
 // function numbers(arr){
@@ -90,7 +133,7 @@
 // }
 // console.log(numbers([1, 2, 3, 4, 5,]));
 
-//2-masala
+// 2-masala
 
 // function sent(arg){
 //     let sum = [];
@@ -145,21 +188,36 @@
 
 // 6-misol
 
-function ex6(arg){
-     let sum = 0;
-     let res = 0;
-     for (const iterator of arg) {
-         for (let i = 1; i <= iterator; i++){
-             if (iterator % i == 0) {
-                 sum++;
-             }
-             if (sum == 2){
-                 res++;
-             }
-         }
+// function ex6(arg){
+// let sum = 0;
+//let res = 0;
+//for (const iterator of arg) {
+//  for (let i = 1; i <= iterator; i++){
+// if (iterator % i == 0) {
+//sum++;
+//  }
+// if (sum == 2){
+// res++;
+//  }
+// }
 
-     }
-     return res
+
+//      } 
+//      return res
+// }
+
+// console.log(ex6([1 , 2 , 3 , 5]));
+
+
+//7-masala
+function ex7(arg ){
+ let sum = 1;
+for (const iterator of arg) {
+ if (iterator % 7 == 0 && iterator % 3 == 0) {
+ sum *= iterator;
+}
+}
+ return sum
 }
 
-console.log(ex6([1 , 7 , 9]));
+console.log(ex7([7,3]));
